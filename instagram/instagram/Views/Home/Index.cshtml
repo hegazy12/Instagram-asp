@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<form method="post">
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <label class="control-label col-md-2"> Email </label>
+            <div class="col-md-10">
+                <input name="email" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2"> Password </label>
+            <div class="col-md-10">
+                <input type="password" name="pass" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-1">
+                <input type="submit" value="send" class="btn btn-default" />
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <a href="@Url.Action("Create","userinfoes")">
+                    <input type="button" value="SinUp" class="btn btn-default" />
+                </a>
+            </div>
+        </div>
+
+    </div>
+</form>
